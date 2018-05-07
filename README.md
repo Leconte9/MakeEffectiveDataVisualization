@@ -26,3 +26,7 @@ After receiving feedbacks, the following changes were done:
 ### Feedback #3:
 > I like the interactive function within your charts, which can remove the subset grouped by handedness. My only suggestion would be reorder the columns with the L on the left, B in the middle and R on the right. 
 
+## Resources
+https://gist.github.com/mbostock/4061502
+http://bl.ocks.org/mbostock/4061502
+http://dimplejs.org/examples_viewer.html?id=scatter_standard
