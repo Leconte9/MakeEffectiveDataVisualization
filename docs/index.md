@@ -6,7 +6,7 @@
     <title>Make Effective Data Visualization</title>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
-    <script src="DataVisualization.js"></script>
+    <script src="DataVisualization_2.js"></script>
 
   </head>
   <body>
