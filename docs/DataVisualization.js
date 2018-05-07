@@ -120,9 +120,6 @@ function draw_BattingAverage(data) {
         .data(stat)
         .enter()
         .append("button")
-        .style("font-family", "sans-serif")
-        .style("font-size", "15px")
-        .style("background", "#E1F9FF")
         .text(function (d) {
             return d;
         });
@@ -133,7 +130,7 @@ function draw_BattingAverage(data) {
             .transition()
             .duration(1000)
             .style("color", "black")
-            .style("background", "#E1F9FF");
+            .style("background", "white");
 
         d3.select(this)
             .transition()
@@ -252,9 +249,6 @@ function draw_HR(data) {
         .data(stat)
         .enter()
         .append("button")
-        .style("font-family", "sans-serif")
-        .style("font-size", "15px")
-        .style("background", "#E1F9FF")
         .text(function (d) {
             return d;
         });
@@ -265,7 +259,7 @@ function draw_HR(data) {
             .transition()
             .duration(1000)
             .style("color", "black")
-            .style("background", "#E1F9FF");
+            .style("background", "white");
 
         d3.select(this)
             .transition()
