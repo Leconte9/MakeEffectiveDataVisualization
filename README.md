@@ -1,7 +1,7 @@
 # Make Effective Data Visualization
 
 ## Summary
-This project is trying to analyze a [Baseball Database] (https://github.com/Leconte9/MakeEffectiveDataVisualization/blob/master/baseball_data.csv). The data set containing 1,157 baseball players including their handedness (right or left handed), height (in inches), weight (in pounds), batting average, and home runs.
+This project is trying to analyze a [Baseball Database](https://github.com/Leconte9/MakeEffectiveDataVisualization/blob/master/baseball_data.csv). The data set containing 1,157 baseball players including their handedness (right or left handed), height (in inches), weight (in pounds), batting average, and home runs.
 
 ## Design
 There are three charts in the data visualization report.
@@ -18,15 +18,11 @@ After receiving feedbacks, the following changes were done:
 
 ## Feedback
 ### Feedback #1:
-```
-I think your narrative makes sense. You want to show left hand players are somewhat better at both batting average and home runs. Also, I can find the players with the height between 71 and 74, and with the weight between 175 and 210 have more home runs. In my view, it would be easier to see if the background color of buttons are not white or clear.
-```
+> I think your narrative makes sense. You want to show left hand players are somewhat better at both batting average and home runs. Also, I can find the players with the height between 71 and 74, and with the weight between 175 and 210 have more home runs. In my view, it would be easier to see if the background color of buttons are not white or clear.
+
 ### Feedback #2:
-```
-It looks you are trying to show as much information as you can. I would suggest rescal your x-axis of two bubble charts to a more reasonable range. For example, within the chart of "Batting Average - Height", there is no need to show the range between 0 and 64 since all players are higher than 64 inches. Besides, while analyzing the performance of battings, the data set supposedly does not include the players who are not batters.
-```
+> It looks you are trying to show as much information as you can. I would suggest rescal your x-axis of two bubble charts to a more reasonable range. For example, within the chart of "Batting Average - Height", there is no need to show the range between 0 and 64 since all players are higher than 64 inches. Besides, while analyzing the performance of battings, the data set supposedly does not include the players who are not batters.
+
 ### Feedback #3:
-```
-I like the interactive function within your charts, which can remove the subset grouped by handedness. My only suggestion would be reorder the columns with the L on the left, B in the middle and R on the right. 
-```
+> I like the interactive function within your charts, which can remove the subset grouped by handedness. My only suggestion would be reorder the columns with the L on the left, B in the middle and R on the right. 
 
