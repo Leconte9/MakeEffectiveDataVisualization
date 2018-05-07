@@ -8,6 +8,7 @@ function draw_Handedness(data) {
     var chart = new dimple.chart(svg, data);
     var x = chart.addCategoryAxis("x", "handedness");
     x.title = "Handedness";
+    x.addOrderRule(["L", "B", "R"]);
     x.fontSize = "15px";
     var y = chart.addMeasureAxis("y", "name");
     y.title = "Total";
@@ -35,12 +36,14 @@ function draw_BattingAverage(data) {
         if (chartType === "Batting Average - Handedness") {
             var x = chart.addCategoryAxis("x", "handedness");
             x.title = "Handedness";
+            x.addOrderRule(["L", "B", "R"]);
             x.fontSize = "15px";
             var y = chart.addMeasureAxis("y", "avg");
             y.title = "Batting Average";
             y.fontSize = "15px";
             var series = chart.addSeries(["name", "handedness"], dimple.plot.bubble);
             series.tooltipFontSize = "15px";
+            // series.addOrderRule(["L", "B", "R"]);
         } else if (chartType === "Batting Average - Height") {
             var x = chart.addMeasureAxis("x", "height");
             x.overrideMin = 64
@@ -120,6 +123,9 @@ function draw_BattingAverage(data) {
         .data(stat)
         .enter()
         .append("button")
+        .style("font-family", "sans-serif")
+        .style("font-size", "15px")
+        .style("background", "#E1F9FF")
         .text(function (d) {
             return d;
         });
@@ -130,7 +136,7 @@ function draw_BattingAverage(data) {
             .transition()
             .duration(1000)
             .style("color", "black")
-            .style("background", "white");
+            .style("background", "#E1F9FF");
 
         d3.select(this)
             .transition()
@@ -160,6 +166,7 @@ function draw_HR(data) {
         if (chartType === "Home Runs - Handedness") {
             var x = chart.addCategoryAxis("x", "handedness");
             x.title = "Handedness";
+            x.addOrderRule(["L", "B", "R"]);
             x.fontSize = "15px";
             var y = chart.addMeasureAxis("y", "HR");
             y.title = "Home Runs";
@@ -249,6 +256,9 @@ function draw_HR(data) {
         .data(stat)
         .enter()
         .append("button")
+        .style("font-family", "sans-serif")
+        .style("font-size", "15px")
+        .style("background", "#E1F9FF")
         .text(function (d) {
             return d;
         });
@@ -259,7 +269,7 @@ function draw_HR(data) {
             .transition()
             .duration(1000)
             .style("color", "black")
-            .style("background", "white");
+            .style("background", "#E1F9FF");
 
         d3.select(this)
             .transition()
