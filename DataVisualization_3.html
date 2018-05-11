@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Effective Data Visualization</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="DataVisualization_3.js"></script>
+  </head>
+  <body>
+    <div class="grid", style="font-family:sans-serif;">
+      <div class="row">
+        <div class="title">
+          <h1>Make Effective Data Visualization: Baseball</h1>
+        </div>
+      </div>
+      <div class="row",>
+        <div class="story">
+          <p>The data set containing 1,157 baseball players including their handedness (right or left handed), height (in inches), weight (in pounds), batting average, and home runs. 
+          <p>This data visualization report is going to analyze whether player's physical difference will affect their performance or not.</p>
+          <p>The first chart would like to show an overview of all players grouped by their handedness. However, since we should focus on batters while analyzing batting averages, the original data has been modified.  All the players, who are not batters, have been removed from the data set in this case.</p>
+          <p>The following chart shows, within all batters, there are 546 right handed players, 256 left handed players and other 89 players using both hands.</p>
+        </div>
+      </div>
+
+      <div class="chart" id="Handedness">
+        <script type="text/javascript">
+          d3.csv("baseball_data_2.csv", draw_Handedness);
+        </script>
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <p>The following two charts will show how players' handedness, height and weight working with their Batting Average.</p>         
+          
+        </div>
+      </div>
+
+      <div class="plotly", id="AvgVSHandedness">
+        <p>From below box chart, we can tell the left handed players score a little bit better then the ones using right hand or both in Batting Average performance. Either the maximun or median of the data from left handed players are highter than the others.</p>
+      </div>
+
+      <div class="chart" id="BatAve">
+        <p>To navigate between the two sets of visualizations, please click on the "Batting Average - Height" or "Batting Average - Weight" buttons. </p>
+        <p>Even further, please try to click RLB legend to hide or show data grouped by handedness.</p>
+        <div class="row" id="BAinstruction">Click to Show How Below Two Factors, Height and Weight, working with Batting Average: </div>
+        <script type="text/javascript">
+          d3.csv("baseball_data_2.csv", draw_BattingAverage);
+        </script>
+      </div>
+      <p>With the help with above chart, we can realize that neither height nor weight is a valid affactor for players' batting average. Players are having the samilar batting average no matter they are with 150 pounds or 220 pounds.</p>
+
+      <div class="row">
+        <div class="story">
+          <p>The follow chart will show how players' handedness, height and weight working with their Home Runs.</p>
+        </div>
+      </div>
+
+      <div class="plotly", id="HRVSHandedness", height=635>
+        <p>Same as the batting average, from below box chart, we can tell the left handed players score better then the ones using right hand or both in the performance of Home Runs performance. Almost all the statistical data from left handed players are highter than the others.</p>
+      </div>
+
+      <div class="chart" id="HomeRun">
+        <p>To navigate between the two sets of visualizations, please click on the "Home Runs - Height" or "Home Runs - Weight" buttons. </p>
+        <p>Also, please try to click RLB legend to hide or show data grouped by handedness.</p>
+        <div class="row" id="HRinstruction">Click to Show How Below Two Factors, Height and Weight, working with Home Runs: </div>
+        <script type="text/javascript">
+          d3.csv("baseball_data_2.csv", draw_HR);
+        </script>        
+      </div>
+      <p>By choosing the different options of dataset, we can realize that height and weight affect more on the number of home runs. The height of the most best players are within 71 to 75 inches, and the weight of the most bast players are within 175 to 195 pounds.  </p>
+    </div>
+  </body>
+</html>
