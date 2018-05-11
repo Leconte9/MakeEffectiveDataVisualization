@@ -26,9 +26,14 @@ After receiving feedbacks, the following changes were done:
 ### Feedback #3:
 > I like the interactive function within your charts, which can remove the subset grouped by handedness. My only suggestion would be reorder the columns with the L on the left, B in the middle and R on the right. 
 
+### Feedback #4:
+> Basically, your visualization design looks good. However, some charts can not tell the result clearly enough. Just like using scatter plot to show relationship between handedness and batting average. It is hard to distinguish the difference of batting averages between players. Since handedness is a kind of discrete data, box plot would be a better choice. You could add a methord of Math.random() to show the effect of jitter. This [link](https://www.freecodecamp.org/challenges/generate-random-whole-numbers-with-javascript) is for your reference.
+
 ## Resources
 https://gist.github.com/mbostock/4061502 
 
 http://bl.ocks.org/mbostock/4061502
  
 http://dimplejs.org/examples_viewer.html?id=scatter_standard
+
+https://www.freecodecamp.org/challenges/generate-random-whole-numbers-with-javascript
